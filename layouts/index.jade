@@ -1,0 +1,83 @@
+doctype html
+html(lang='en')
+    head
+        title= title
+        meta(charset='utf-8')
+        link(rel='stylesheet', href='/assets/stylesheets/main.css', type='text/css')
+
+    body
+        .wrapper.row1
+
+        .wrapper.row2
+            #container.clear
+                section#slider
+                    img(src='/assets/images/main.png', style='width: 100%')
+                header#header.clear
+                    #hgroup
+                        h1
+                            a(href='/') WISE 2017
+                        h2 The 18th International Conference on Web Information Systems Engineering
+                        hl
+                #content
+                    section!= contents
+                aside#right_column
+                    h2.title Units & Staff
+                    nav
+                        ul
+                            li
+                                a(href='/organization/') Organization
+                            li
+                                a(href='/papers/') Call for papers
+                            li
+                                a(href='/hostcity/') Host city
+                            li
+                                a(href='/dates/') Important dates
+                            li
+                                a(href='#') Committee
+                            li
+                                a(href='#') Sponsors
+                            li
+                                a(href='#') Publication
+                    h2.title Notes
+                    nav
+                        ul
+                            li
+                                a(href='#') Program
+                            li
+                                a(href='#') Registration
+                            li
+                                a(href='#') Accommodation
+                            li
+                                a(href='#') Invitation Letters
+                            li
+                                a(href='#') Paper Submission
+                            li
+                                a(href='#') Keynote Lectures
+                            li
+                                a(href='#') Venue
+                            li
+                                a(href='#') Accepted Papers
+                            li
+                                a(href='#') Download flyer
+                    h2.title Related Links
+                    nav
+                        ul
+                            li
+                                a(href='http://www.springer.com/computer/database+management+\%26+information+retrieval/journal/11280', target = '_blank') WWW Journal
+                            li
+                                a(href='http://www.hissjournal.com/', target='_blank') HISS Journal
+                            li
+                                a(href='http://www.his-conferences.org/2017/', target='_blank') HIS 2017
+                    // /nav
+                    h2.title Contacts
+                    section.last
+                        address
+                            a(href='mailto:wise.conf@gmail.com' target='_blank') wise.conf@gmail.com
+        .wrapper.row3
+            footer#footer.clear
+                p.fl_left
+                    | WISE 2017 © All Rights Reserved
+                p.fl_right
+                    | Created by&nbsp;
+                    a(href='https://risentveber.ru', title='Risent Veber') Risent Veber
+    script(src='/assets/js/turbolinks.min.js')
