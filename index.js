@@ -1,11 +1,11 @@
 const Metalsmith     = require('metalsmith');
 const timer          = require('./plugins/timer');
-const printFilesTree = require('./plugins/printFilesTree');
 const jade           = require('metalsmith-jade');
 const layouts        = require('metalsmith-layouts');
 const permalinks     = require('metalsmith-permalinks');
 const uglify         = require('metalsmith-uglify');
 const cleanCss       = require('metalsmith-clean-css');
+const inspectFiles   = require('metalsmith-inspect-files');
 
 Metalsmith(__dirname)
     .source('./source')
@@ -27,11 +27,9 @@ Metalsmith(__dirname)
     }))
     .use(cleanCss())
     .use(uglify())
+    .use(inspectFiles())
     .build((err, files) => {
         if (err) { throw err; }
 
-        process.stdout.write('\x1b[1m');
-        printFilesTree(files);
-        process.stdout.write('\x1b[0m');
         timer('Build time: ')();
     });

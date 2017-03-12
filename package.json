@@ -12,7 +12,8 @@
     "babel-eslint": "^7.1.1",
     "eslint": "^3.12.2",
     "eslint-config-airbnb": "^13.0.0",
-    "metalsmith": "^2.3.0"
+    "metalsmith": "^2.3.0",
+    "metalsmith-inspect-files": "^1.0.1"
   },
   "dependencies": {
     "metalsmith-clean-css": "^5.0.1",
