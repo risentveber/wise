@@ -70,10 +70,10 @@ blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
 #header #hgroup h1{font-size:50px;}
 #header #hgroup h2{font-size:30px;}
 
-#header nav{display:block; width:100%; margin:0; padding:20px 0; border-top:1px solid #DEDEDE; border-bottom:1px solid #DEDEDE;}
-#header nav ul{}
-#header nav li{display:inline; margin-right:25px; text-transform:uppercase;}
-#header nav li.last{margin-right:0;}
+#header nav{display:block; width:100%; margin:0; padding: 0; border-top:1px solid #DEDEDE; border-bottom:1px solid #DEDEDE;}
+#header nav ul{ overflow: auto; }
+#header nav li{display:block; margin-right:25px; float:right; text-transform:uppercase; padding: 20px 0;}
+#header nav li.main{display: block; font-size:50px; float: left; padding: 0;}
 #header nav li a{}
 #header nav li a:hover{color:#FF9900; background-color:#FFFFFF;}
 
@@ -87,7 +87,7 @@ blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
 /* ------Slider-----*/
 
 #container #slider{display:block; width:100%;}
-#container #slider img {display:block; padding:9px; border:1px solid #DEDEDE;}
+#container #slider img {display:block; padding:9px; border:1px solid #DEDEDE; box-sizing: border-box; width: 100%; }
 #container #slider a:hover{border-color:#FF9900;}
 
 /* ------Main Content-----*/
