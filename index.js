@@ -25,10 +25,12 @@ Metalsmith(__dirname)
         default: 'index.jade',
         pattern: '**/*.html'
     }))
-    .use(cleanCss())
-    .use(uglify())
+    .use(cleanCss({}))
+    .use(uglify({
+        removeOriginal: true
+    }))
     .use(inspectFiles())
-    .build((err, files) => {
+    .build((err) => {
         if (err) { throw err; }
 
         timer('Build time: ')();
