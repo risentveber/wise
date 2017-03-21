@@ -1,30 +1,29 @@
 {
-  "name": "WISE 2017 conference",
+  "name": "wise2017",
   "version": "1.0.0",
   "description": "The 18th International Conference on Web Information Systems Engineering",
   "main": "index.js",
-  "scripts": {
-    "build": "node index.js"
-  },
-  "author": "Risent Veber <risentveber@gmail.com>",
-  "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.12.2",
-    "eslint-config-airbnb": "^13.0.0",
     "metalsmith": "^2.3.0",
-    "metalsmith-inspect-files": "^1.0.1"
-  },
-  "dependencies": {
     "metalsmith-clean-css": "^5.0.1",
-    "metalsmith-code-highlight": "0.0.3",
-    "metalsmith-collections": "^0.9.0",
-    "metalsmith-ignore": "^0.1.2",
-    "metalsmith-in-place": "^2.0.1",
-    "metalsmith-include": "0.0.2",
+    "metalsmith-inspect-files": "^1.0.1",
     "metalsmith-jade": "^2.0.2",
     "metalsmith-layouts": "^1.8.0",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-uglify": "^1.5.1"
-  }
+  },
+  "scripts": {
+    "build": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risentveber/wise.git"
+  },
+  "author": "Risent Veber <risentveber@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/risentveber/wise/issues"
+  },
+  "homepage": "https://github.com/risentveber/wise#readme"
 }
