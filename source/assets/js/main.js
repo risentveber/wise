@@ -1,5 +1,16 @@
-
-
+window.initMap = function initMap() {
+	var container = document.getElementById('map');
+	if (!container) return;
+	var map = new google.maps.Map(container, {
+		center: {lat: 47.242851, lng: 39.670501},
+		zoom: 16
+	});
+	var marker = new google.maps.Marker({
+		position: {lat: 47.242851, lng: 39.670501},
+		map: map,
+		title: 'Catunltd'
+	});
+};
 
 /*
  Turbolinks 5.0.0
