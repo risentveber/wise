@@ -1,6 +1,125 @@
 h2 Accommodation
 
 p
-    | The conference has negotiated with the Hotel &laquo;Tsargrad&raquo;&nbsp;
-    a(href='www.tzargrad.ru', target='_blank') www.tzargrad.ru
-    | &nbsp;for the participants. Hotel reservation details will be presented later.
+    | The conference has negotiated with
+    a(href='http://www.tzargrad.ru', target='_blank') &nbsp;Tsargrad Hotel&nbsp;
+    | for the participants. All the registered WISE 2017 attendees will be offered with special hotel rates.
+
+p The room rates are inclusive of service charge and daily breakfast, lunch and dinner per room per day.
+
+table.table.accomodation
+    tr
+        th Room types
+        th 1 pers.
+        th 2 pers.
+        th 3 pers.
+        th 4 pers.
+    tr
+        td Standard Twin
+        td
+            | 6000 &#x20bd;
+            br
+            | &#36;101 USA
+        td
+            | 7000 &#x20bd;
+            br
+            | &#36;118 USA
+        td &#8212;
+        td &#8212;
+    tr
+        td Deluxe
+        td
+            | 7000 &#x20bd;
+            br
+            | &#36;118 USA
+        td
+            | 8000 &#x20bd;
+            br
+            | &#36;135 USA
+        td
+            | 12000 &#x20bd;
+            br
+            | &#36;202 USA
+        td &#8212;
+    tr
+        td Suite
+        td
+            | 8000 &#x20bd;
+            br
+            | &#36;135 USA
+        td
+            | 9000 &#x20bd;
+            br
+            | &#36;151 USA
+        td
+            | 13000 &#x20bd;
+            br
+            | &#36;219 USA
+        td
+            | 17000 &#x20bd;
+            br
+            | &#36;287 USA
+
+p The exchange rate of the dollar USA to the ruble is shown on 17.07.2017.
+
+p
+    | The site
+    a(href='https://www.booking.com' target='_blank') &nbsp;www.booking.com&nbsp;
+    | could be used to do room reservations in the hotel,
+    | but it has no options for special cases as conferences. So Organisation Committee assumes the responsibility
+    | of collecting applications for accommodation and reservation of room.
+    | Please fill out the Hotel Reservation Form and send it by email to
+    a(href='mailto:rashid.zalyalov@gmail.com' target='_blank') rashid.zalyalov@gmail.com
+    | .
+    | The deadline for hotel reservation with the conference rates is Sep 30th, 2017.
+    | Cancellation of the reserved rooms might be done not later than 72 hours before check-in. Otherwise,
+    | the conference will have to pay the first night of non-attendance.
+    | In the case of shortage of rooms in Tsargrad, accommodation will be offered at
+    a(href='https://www.korston.ru/serpukhov/' target='_blank') &nbsp;Korston Hotel&nbsp;
+    | in Serpukhov, 23 km from Tsargrad.
+
+h2 HOTEL RESERVATION FORM
+
+form(
+    action="mailto:rashid.zalyalov@gmail.com?subject=HOTEL RESERVATION FORM"
+    method="post"
+    enctype="text/plain"
+    )
+    label Arrival Date:
+    input(type="text" name="Arrival Date: " required)
+    br
+    label Departure Date:
+    input(type="text" name="Departure Date: " required)
+    br
+    label Name:
+    input(type="text" name="Name: " required)
+    | &nbsp;(Mr./Ms. Last First)
+    br
+    label Title:
+    input(type="text" name="Title: " required)
+    br
+    label Paper ID:
+    input(type="text" name="Paper ID: ")
+    | &nbsp;(on Easyhair, if you have)
+    br
+    label Company:
+    input(type="text" name="Company: " required)
+    br
+    label E-Mail Address:
+    input(type="email" name="E-Mail Address: " required)
+    br
+    label Room category:
+    select(name="Room category: " required)
+        option(value="Twin") Twin
+        option(value="Deluxe") Deluxe
+        option(value="Suite") Suite
+    br
+    label Number of persons:
+    input(type="number" min="1" name="Number of persons: " required)
+    br
+    label Your desires:
+    textarea(name="Your desires: ")
+    br
+
+    input(type="submit" value="Send")
+    input(type="reset" value="Reset")
