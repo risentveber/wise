@@ -3,6 +3,8 @@ html(lang='en')
     head
         meta(charset='utf-8')
         title= title
+        meta(name='description' content='The 18th International Conference on Web Information Systems Engineering')
+        meta(name='Keywords' content='WEB, programming, engineering, science, wise, conference, IT, data, machine learning, networks')
         link(rel='icon', href='/assets/images/favicon.ico')
         link(rel='stylesheet', href='/assets/stylesheets/main.css', type='text/css')
 
@@ -38,12 +40,16 @@ html(lang='en')
                                 a(href='/organization/') Organization
                             li
                                 a(href='/committee/') Committee
+                            li
+                                a(href='/keynote_speakers/') Keynote speakers
 
                     h2.title Notes
                     nav
                         ul
                             li
                                 a(href='/visa_information/') Visa information
+                            li
+                                a(href='/special_track/') Special track
                             li
                                 a(href='/registration/') Registration
                             li
@@ -52,16 +58,12 @@ html(lang='en')
                                 a(href='/publication/') Publication
                             li
                                 a(href='/paper_submission/') Paper submission
-                            //li
-                            //    a(href='/keynote_lectures/') Keynote lectures
                             li
                                 a(href='/workshops/') Workshops
                             li
                                 a(href='/venue/') Venue
-                            //li
-                            //    a(href='/accepted_papers/') Accepted papers
-                            //li
-                            //    a(href='/download_flyer/') Download flyer
+                            li
+                                a(href='/accepted_papers/') Accepted papers
                     h2.title Related Links
                     nav
                         ul
@@ -73,7 +75,6 @@ html(lang='en')
                                 a(href='http://www.his-conferences.org/2017', target='_blank') HIS 2017
                             li
                                 a(href='http://www.icpt.su/home/conference/wise-2017', target='_blank') WISE 2017 Application for RFBR
-                    // /nav
                     h2.title Contacts
                     section.last
                         address
@@ -86,6 +87,6 @@ html(lang='en')
                     | Created by&nbsp;
                     a(href='https://risentveber.ru', title='Risent Veber') Risent Veber
     script(src='/assets/js/main.min.js')
-    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD08E7l89PaA49jZeisj1gk2oRtf05ojsI&callback=initMap",
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD08E7l89PaA49jZeisj1gk2oRtf05ojsI&callback=initMap',
         async, defer)
     .preload-images
