@@ -184,3 +184,8 @@ table tr:nth-of-type(odd) {
     height: 300px;
 }
 
+.important {
+    font-style: oblique;
+    color: red;
+}
+
