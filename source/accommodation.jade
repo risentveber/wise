@@ -90,47 +90,9 @@ p
     | in Serpukhov, 23 km from Tsargrad.
 
 h2 HOTEL RESERVATION FORM
-
-form(
-    action="mailto:rashid.zalyalov@gmail.com?subject=HOTEL RESERVATION FORM"
-    method="post"
-    enctype="text/plain"
-    )
-    label Arrival Date:
-    input(type="text" name="Arrival Date: " required)
-    br
-    label Departure Date:
-    input(type="text" name="Departure Date: " required)
-    br
-    label Name:
-    input(type="text" name="Name: " required)
-    | &nbsp;(Mr./Ms. Last First)
-    br
-    label Title:
-    input(type="text" name="Title: " required)
-    br
-    label Paper ID:
-    input(type="text" name="Paper ID: ")
-    | &nbsp;(on Easyhair, if you have)
-    br
-    label Company:
-    input(type="text" name="Company: " required)
-    br
-    label E-Mail Address:
-    input(type="email" name="E-Mail Address: " required)
-    br
-    label Room category:
-    select(name="Room category: " required)
-        option(value="Twin") Twin
-        option(value="Deluxe") Deluxe
-        option(value="Suite") Suite
-    br
-    label Number of persons:
-    input(type="number" min="1" name="Number of persons: " required)
-    br
-    label Your desires:
-    textarea(name="Your desires: ")
-    br
-
-    input(type="submit" value="Send")
-    input(type="reset" value="Reset")
+p
+    | All data saved
+    = ' '
+    a(href='https://docs.google.com/spreadsheets/d/1AR-QMCNU_4kdOjillLa9Et3u_7obx2pqgJHX3Nb-uAk/edit?usp=sharing') here
+    | .
+iframe(src="https://docs.google.com/forms/d/e/1FAIpQLSe25yHotFgt4MqkyZm3GSAGE5B2kNF8nJ52bu5AH5iAXgiiMA/viewform?embedded=true" width="600" height="600" frameborder="0" marginheight="0" marginwidth="0")
